@@ -13,6 +13,12 @@ public class Movement : MonoBehaviour
     {
         cooldownTimer -= Time.deltaTime;
 
+        var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Quaternion rotation = Quaternion.LookRotation(transform.position - mousePosition, Vector3.back);
+        transform.rotation = rotation;
+        transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
+        GetComponent<Rigidbody2D>().angularVelocity = -0f;
+
         if (Input.GetKey(KeyCode.A))
             gameObject.transform.position += new Vector3(-horizontalSpeed * Time.fixedDeltaTime, 0, 0);
 

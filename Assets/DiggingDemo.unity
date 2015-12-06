@@ -227,6 +227,33 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 8101f733e050ce14d9a68d86770b02ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &133061219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 133061220}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133061220
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133061219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .328000009, y: -.023, z: -2.29999995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 343025199}
+  m_RootOrder: 0
 --- !u!1 &137268455
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +706,8 @@ GameObject:
   - 58: {fileID: 343025200}
   - 82: {fileID: 343025201}
   - 114: {fileID: 343025202}
+  - 114: {fileID: 343025203}
+  - 50: {fileID: 343025204}
   m_Layer: 0
   m_Name: TheKid
   m_TagString: Untagged
@@ -736,7 +765,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.78999996, y: 1.47875369, z: -2.32617188}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 133061220}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!58 &343025200
@@ -835,6 +865,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   speed: {x: 0, y: 0}
+--- !u!114 &343025203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343025196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d0f9cf5deb5ca43b27c9886d62ffa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmmoMax: 0
+  ammoCount: 0
+  fireDelay: .5
+  bulletPrefab: {fileID: 159202, guid: d85c5dad85405af49a4b40b2765cd75f, type: 2}
+  bulletOffset: {x: 0, y: .5, z: 0}
+--- !u!50 &343025204
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343025196}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &383578095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,6 +1733,7 @@ GameObject:
   - 92: {fileID: 999835241}
   - 124: {fileID: 999835240}
   - 81: {fileID: 999835239}
+  - 114: {fileID: 999835244}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1745,6 +1808,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &999835244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999835238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5fd9faea4d989408b07efd0b34b08b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTarget: {x: 0, y: 0, z: 0}
+  target: {fileID: 0}
 --- !u!1 &999981052
 GameObject:
   m_ObjectHideFlags: 0
