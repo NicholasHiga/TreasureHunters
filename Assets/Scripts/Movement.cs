@@ -9,6 +9,9 @@ public class Movement : MonoBehaviour
     public float digDelay = 3.0f;
     float cooldownTimer = 0f;
 
+	// Make this an enum later, when there's pretty much 360 degree freedom
+	bool directionFacing = false; // 0 = left, 1 = right
+
     void FixedUpdate()
     {
         cooldownTimer -= Time.deltaTime;
@@ -29,5 +32,11 @@ public class Movement : MonoBehaviour
             cooldownTimer = digDelay;
             Instantiate(digMachine, transform.position, transform.rotation);
         }
+
+		directionFacing = Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.localPosition.x;
+
+		if ((!directionFacing && transform.localScale.x >= 0)
+			|| (directionFacing && transform.localScale.x <= 0))
+			transform.localScale = new Vector3(-1 * transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 }

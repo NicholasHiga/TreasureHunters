@@ -23,7 +23,12 @@ public class PlayerShooting : MonoBehaviour
         {
             cooldownTimer = fireDelay;
             Vector3 offset = transform.rotation * bulletOffset;
-            Instantiate(bulletPrefab, transform.position, transform.rotation);
+
+			GameObject g = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
+			BulletMove bmScript = g.GetComponent<BulletMove>();
+			Vector3 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+			direction.Normalize();
+			bmScript.setDirection(direction);
             //ammoCount--;
         }
         //SetText();
