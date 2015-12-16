@@ -24,12 +24,12 @@ public class Vax : Character
 
 		switch_weapon_sound = Resources.Load("Sounds/Weapons/SwitchWeapon") as AudioClip;
 
-		weapons[0] = new RangedWeapon(audio);
+		weapons[0] = new Pistol(audio, transform);
 		weapons[0].timeBetweenShots = 0.45f;
 		weapons[0].weaponDamage = 20;
 		weapons[0].shotSound = Resources.Load("Sounds/Weapons/Pistol") as AudioClip;
 
-		weapons[1] = new RangedWeapon(audio);
+		/*weapons[1] = new RangedWeapon(audio);
 		weapons[1].timeBetweenShots = 1.5f;
 		weapons[1].weaponDamage = 30;
 		weapons[1].shotSound = Resources.Load("Sounds/Weapons/Shotgun") as AudioClip;
@@ -37,7 +37,7 @@ public class Vax : Character
 		weapons[2] = new RangedWeapon(audio);
 		weapons[2].timeBetweenShots = 4f;
 		weapons[2].weaponDamage = 40;
-		weapons[2].shotSound = Resources.Load("Sounds/Weapons/Pistol") as AudioClip;
+		weapons[2].shotSound = Resources.Load("Sounds/Weapons/Pistol") as AudioClip;*/
 	}
 	
 	// Update is called once per frame

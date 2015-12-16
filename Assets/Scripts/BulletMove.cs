@@ -17,7 +17,7 @@ public class BulletMove : MonoBehaviour {
 		//transform.position += 
 		//	(transform.rotation * new Vector3(currentSpeed.x * Time.deltaTime,
 		//	currentSpeed.y * Time.deltaTime, 0.0f)) * -1;
-		transform.position += transform.rotation * currentSpeed * Time.deltaTime;
+		transform.position += currentSpeed * Time.deltaTime;
 	}
 
 	public void setDirection(Vector3 d)
@@ -29,5 +29,6 @@ public class BulletMove : MonoBehaviour {
 
 		currentSpeed.x = baseSpeed * Mathf.Cos(theta);
 		currentSpeed.y = baseSpeed * Mathf.Sin(theta);
+		transform.rotation = Quaternion.LookRotation(transform.position, Vector3.up);
 	}
 }

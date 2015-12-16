@@ -24,7 +24,8 @@ public class PickUp : MonoBehaviour
 
     void Start()
     {
-        currentHealth = 1;
+		Debug.Log(gameObject.name);
+		currentHealth = 1;
         calculatedHealth = currentHealth / maxHealth;
         setHealthBar(calculatedHealth);
         healthPot = 0;
@@ -163,9 +164,9 @@ public class PickUp : MonoBehaviour
         }
         if (!hyper&&!Raged)
         {
-            gameObject.GetComponent<Movement>().horizontalSpeed = 3;
+            /*gameObject.GetComponent<Movement>().horizontalSpeed = 3;
             gameObject.GetComponent<Movement>().verticalSpeed = 2;
-            gameObject.GetComponent<Renderer>().material.color = Color.white;
+            gameObject.GetComponent<Renderer>().material.color = Color.white;*/
         }
         if (!allowedTele)
         {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RangedWeapon
+public abstract class RangedWeapon
 { 
 	public AudioClip shotSound;
 	public uint weaponDamage;
@@ -10,12 +10,14 @@ public class RangedWeapon
 
 	protected new AudioSource audio;
 	protected float lastTimeShot;
+	protected Transform transform;
 
 	// Use this for initialization
-    public RangedWeapon (AudioSource _audio)
+    public RangedWeapon (AudioSource _audio, Transform t)
 	{
 		lastTimeShot = Time.time - timeBetweenShots;
 		audio = _audio;
+		transform = t;
 	}
 	
 	// Update is called once per frame
@@ -23,8 +25,11 @@ public class RangedWeapon
 	{
 		if (Input.GetMouseButton(0) && Time.time - lastTimeShot >= timeBetweenShots)
 		{
-			audio.PlayOneShot(shotSound, 1.0f);
+			Shoot();
 			lastTimeShot = Time.time;
+			Debug.Log("Time: " + Time.time + " lastTimeShot: " + lastTimeShot + " " + (Time.time - lastTimeShot));
 		}
 	}
+
+	public abstract void Shoot();
 }
