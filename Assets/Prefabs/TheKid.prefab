@@ -83,7 +83,11 @@ GameObject:
   - 114: {fileID: 11461820}
   - 50: {fileID: 5007178}
   - 114: {fileID: 11487558}
+<<<<<<< HEAD
   - 82: {fileID: 8244958}
+=======
+  - 114: {fileID: 11418354}
+>>>>>>> origin/master
   m_Layer: 0
   m_Name: TheKid
   m_TagString: Player
@@ -133,13 +137,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.00999999, y: 1.12}
+<<<<<<< HEAD
 --- !u!82 &8244958
 AudioSource:
+=======
+--- !u!114 &11418354
+MonoBehaviour:
+>>>>>>> origin/master
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174588}
   m_Enabled: 1
+<<<<<<< HEAD
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -203,6 +213,17 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d0f9cf5deb5ca43b27c9886d62ffa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmmoMax: 0
+  ammoCount: 0
+  fireDelay: .5
+  bulletPrefab: {fileID: 159202, guid: d85c5dad85405af49a4b40b2765cd75f, type: 2}
+  bulletOffset: {x: 0, y: .5, z: 0}
+>>>>>>> origin/master
 --- !u!114 &11426322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -243,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpeed: 3
   verticalSpeed: 2
-  digMachine: {fileID: 0}
+  digMachine: {fileID: 100396, guid: b958836dbce6ee04e9fd4ae5a2c77ed2, type: 2}
   digDelay: 3
 --- !u!114 &11461820
 MonoBehaviour:
@@ -362,8 +383,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 100490}
   HealthBarBig: {fileID: 0}
+<<<<<<< HEAD
   Tele1: {fileID: 0}
   Tele2: {fileID: 0}
+=======
+  Tele1: {fileID: 132672, guid: 70498eb9082e0574a85f53fdf7f8ba8a, type: 2}
+  Tele2: {fileID: 132672, guid: ab71e6edd94302245b190f3cb64c32a0, type: 2}
+  Player: {fileID: 174588}
+>>>>>>> origin/master
 --- !u!212 &21220998
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -504,7 +531,27 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: digMachine
+      value: 
+      objectReference: {fileID: 100396, guid: b958836dbce6ee04e9fd4ae5a2c77ed2, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Tele1
+      value: 
+      objectReference: {fileID: 132672, guid: 70498eb9082e0574a85f53fdf7f8ba8a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Tele2
+      value: 
+      objectReference: {fileID: 132672, guid: ab71e6edd94302245b190f3cb64c32a0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 159202, guid: d85c5dad85405af49a4b40b2765cd75f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 174588}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 174588}
