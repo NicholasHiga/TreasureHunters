@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class BulletMove : MonoBehaviour {
-	public Vector3 baseSpeed = new Vector3(5.0f, 5.0f, 0.0f);
+	public float baseSpeed = 5.0f;
 	public Vector3 currentSpeed;
 
 	private Vector3 direction = new Vector3(1.0f, 1.0f, 1.0f);
@@ -23,6 +23,11 @@ public class BulletMove : MonoBehaviour {
 	public void setDirection(Vector3 d)
 	{
 		direction = d;
-		currentSpeed = Vector3.Scale(baseSpeed, direction);
+		d.Normalize();
+
+		float theta = Mathf.Atan2(d.y, d.x);
+
+		currentSpeed.x = baseSpeed * Mathf.Cos(theta);
+		currentSpeed.y = baseSpeed * Mathf.Sin(theta);
 	}
 }

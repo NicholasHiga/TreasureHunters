@@ -5,8 +5,8 @@ public class Movement : MonoBehaviour
 {
     public float horizontalSpeed;
     public float verticalSpeed;
-    public Transform digMachine;
-    public float digDelay = 3.0f;
+    public GameObject digMachine;
+    public float digDelay = 0.3f;
     float cooldownTimer = 0f;
 
 	// Make this an enum later, when there's pretty much 360 degree freedom
@@ -27,6 +27,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
             gameObject.transform.position += new Vector3(0, -verticalSpeed * Time.fixedDeltaTime, 0);
+
         if (Input.GetKey(KeyCode.Space) && cooldownTimer <= 0)
         {
             cooldownTimer = digDelay;
