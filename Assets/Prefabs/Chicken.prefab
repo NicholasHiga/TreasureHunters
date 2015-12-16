@@ -141,7 +141,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 102
   m_Sprite: {fileID: 21300000, guid: 9a7b4ec741721f54dbdee19fb71e23e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
@@ -153,7 +153,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_SortingOrder
-      value: 15
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: timer
