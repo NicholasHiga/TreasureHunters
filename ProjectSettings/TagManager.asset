@@ -12,6 +12,7 @@ TagManager:
   - RedPowerUp
   - Tele1
   - Tele2
+  - T
   layers:
   - Default
   - TransparentFX

@@ -11,13 +11,16 @@ public class PickUp : MonoBehaviour
     public GameObject HealthBarBig;
     public GameObject Tele1;
     public GameObject Tele2;
+    public GameObject Player;
     int healthPot;
     int RhealthPot;
     bool Raged;
     bool hyper;
+    bool trapped;
     float RagedTimer;
     float hyperTimer;
     float teleTimer;
+    float TrapTimer;
     Vector3 orgLocalScale;
     bool allowedTele;
 
@@ -30,9 +33,11 @@ public class PickUp : MonoBehaviour
         healthPot = 0;
         Raged = false;
         hyper = false;
+        trapped = false;
         RagedTimer = 0;
         teleTimer = 0;
         hyperTimer = 0;
+        TrapTimer = 0;
         orgLocalScale = transform.localScale;
         allowedTele = true;
     }
@@ -42,6 +47,7 @@ public class PickUp : MonoBehaviour
         RagedTimer -= Time.deltaTime;
         hyperTimer -= Time.deltaTime;
         teleTimer -= Time.deltaTime;
+        TrapTimer -= Time.deltaTime;
         ItemUsage();
         if (healthPot >= 3)
         {
@@ -77,7 +83,7 @@ public class PickUp : MonoBehaviour
             if (!hyper)
             {
                 Encouraged();
-            }
+            } 
             hyper = true;
         }
         else if (col.gameObject.tag == "Tele1"&&allowedTele)
@@ -91,6 +97,11 @@ public class PickUp : MonoBehaviour
             transform.position = Tele1.transform.position;
             allowedTele = false;
             Teled();
+        }
+        else if (col.gameObject.tag == "T")
+        {
+            trapped = true;
+            Trapped();
         }
     }
     public void setHealthBar(float myHealth)
@@ -117,8 +128,8 @@ public class PickUp : MonoBehaviour
         RagedTimer = 5;
         if (Raged == false)
         {
-            transform.localScale += new Vector3(.5f, .5f, 0);
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
+            Player.transform.localScale = new Vector3(1.5f, 1.5f, 0);
+            Player.GetComponent<Renderer>().material.color = Color.red;
         }
     }
     void Encouraged()
@@ -126,15 +137,25 @@ public class PickUp : MonoBehaviour
         hyperTimer = 10;
         if (hyper == false)
         {
-            gameObject.GetComponent<Movement>().horizontalSpeed = 9;
-            gameObject.GetComponent<Movement>().verticalSpeed = 6;
-            gameObject.GetComponent<Renderer>().material.color = Color.magenta;
+            Player.GetComponent<Movement>().horizontalSpeed = 5;
+            Player.GetComponent<Movement>().verticalSpeed = 4;
+            Player.GetComponent<Renderer>().material.color = Color.magenta;
         }
     }
     void Teled()
     {
         teleTimer = 2;
     }
+
+    void Trapped()
+    {
+        TrapTimer = 2.5f;
+        if (trapped)
+        {
+            Player.GetComponent<Movement>().enabled = false;
+        }
+    }
+
     void State()
     {
         if (Raged)
@@ -150,7 +171,7 @@ public class PickUp : MonoBehaviour
         if (!Raged&&!hyper)
         {
             
-            gameObject.GetComponent<Renderer>().material.color = Color.white;
+            Player.GetComponent<Renderer>().material.color = Color.white;
 
         }
         if (hyper)
@@ -158,14 +179,14 @@ public class PickUp : MonoBehaviour
             Debug.Log(hyperTimer.ToString());
             if (hyperTimer <= 0)
             {
-                hyper = false;
+                hyper = false;  
             }
         }
         if (!hyper&&!Raged)
         {
-            gameObject.GetComponent<Movement>().horizontalSpeed = 3;
-            gameObject.GetComponent<Movement>().verticalSpeed = 2;
-            gameObject.GetComponent<Renderer>().material.color = Color.white;
+            Player.GetComponent<Movement>().horizontalSpeed = 3;
+            Player.GetComponent<Movement>().verticalSpeed = 2;
+            Player.GetComponent<Renderer>().material.color = Color.white;
         }
         if (!allowedTele)
         {
@@ -176,6 +197,16 @@ public class PickUp : MonoBehaviour
                 allowedTele = true; 
             }
 
+        }
+        if (trapped)
+        {
+            Debug.Log(TrapTimer.ToString());
+            if (TrapTimer <= 0)
+            {
+                trapped = false;
+                Player.GetComponent<Movement>().enabled = true;
+                
+            }
         }
     }
 }
