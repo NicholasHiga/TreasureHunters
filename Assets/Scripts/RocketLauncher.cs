@@ -10,6 +10,7 @@ public class RocketLauncher : RangedWeapon
 
 	public override void Shoot()
 	{
+        SkillsUI.skillTwo.fillAmount = 0;
 		audio.PlayOneShot(shotSound, 1.0f);
 		GameObject g = GameObject.Instantiate(Resources.Load("Prefabs/Missile"), transform.position, Quaternion.identity) as GameObject;
 		MissileMove mmScript = g.GetComponent<MissileMove>();

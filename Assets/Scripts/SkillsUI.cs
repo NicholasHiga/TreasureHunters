@@ -39,7 +39,7 @@ public class SkillsUI : MonoBehaviour {
         }
         if (time >= 0.1f)
         {
-            skillOne.fillAmount += 0.009f;
+            skillOne.fillAmount += 0.04f;
             if (skillOne.fillAmount >= 1.0f)
             {
                 canCastSkillOne = true;
@@ -55,7 +55,7 @@ public class SkillsUI : MonoBehaviour {
         }
         if (time >= 0.1f)
         {
-            skillTwo.fillAmount += 0.01f;
+            skillTwo.fillAmount += 0.015f;
             if (skillTwo.fillAmount >= 1.0f)
             {
                 canCastSkillTwo = true;

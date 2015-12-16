@@ -50,7 +50,7 @@ public class Vax : Character
 		//weapons[1].parent = this;
 
 		weapons[1] = new RocketLauncher(audio, transform);
-		weapons[1].timeBetweenShots = 0.5f;
+		weapons[1].timeBetweenShots = 1.5f;
 		weapons[1].weaponDamage = 40;
 		weapons[1].shotSound = Resources.Load("Sounds/Weapons/RocketShoot") as AudioClip;
 		weapons[1].parent = this;

@@ -11,6 +11,7 @@ public class Pistol : RangedWeapon
 	
 	public override void Shoot()
 	{
+        SkillsUI.skillOne.fillAmount = 0;
 		audio.PlayOneShot(shotSound, 1.0f);
 		GameObject g = GameObject.Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.identity) as GameObject;
 		BulletMove bmScript = g.GetComponent<BulletMove>();
