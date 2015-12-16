@@ -1120,7 +1120,7 @@ GameObject:
   - 222: {fileID: 311131193}
   - 114: {fileID: 311131192}
   m_Layer: 5
-  m_Name: Tumblr
+  m_Name: icon4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,7 +1162,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: ad62cda9760f4c24baa10b6d851fd6b3, type: 3}
+  m_Texture: {fileID: 2800000, guid: f62e4d250d5b351428a2b90891332903, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1277,6 +1277,7 @@ GameObject:
   - 114: {fileID: 343025202}
   - 50: {fileID: 343025201}
   - 114: {fileID: 343025200}
+  - 114: {fileID: 343025204}
   m_Layer: 0
   m_Name: TheKid
   m_TagString: Player
@@ -1297,7 +1298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpeed: 3
   verticalSpeed: 2
-  digMachine: {fileID: 0}
+  digMachine: {fileID: 100396, guid: b958836dbce6ee04e9fd4ae5a2c77ed2, type: 2}
   digDelay: 3
 --- !u!212 &343025198
 SpriteRenderer:
@@ -1393,6 +1394,22 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.00999999, y: 1.12}
+--- !u!114 &343025204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343025196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d0f9cf5deb5ca43b27c9886d62ffa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmmoMax: 0
+  ammoCount: 0
+  fireDelay: .5
+  bulletPrefab: {fileID: 159202, guid: d85c5dad85405af49a4b40b2765cd75f, type: 2}
+  bulletOffset: {x: 0, y: .5, z: 0}
 --- !u!1 &382512713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,7 +1536,7 @@ GameObject:
   - 222: {fileID: 393517069}
   - 114: {fileID: 393517068}
   m_Layer: 5
-  m_Name: Instagram
+  m_Name: icon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1561,7 +1578,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 574edb26baf25f8429a371d187a14129, type: 3}
+  m_Texture: {fileID: 2800000, guid: 16ba4c7faf92a7746a9b3e8d0ef59c48, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2557,7 +2574,7 @@ GameObject:
   - 222: {fileID: 733837046}
   - 114: {fileID: 733837045}
   m_Layer: 5
-  m_Name: Playstation
+  m_Name: icon3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2599,7 +2616,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 4dd2bd4fb92219a43a50576b0a3b2a2e, type: 3}
+  m_Texture: {fileID: 2800000, guid: e058b35319da0cc489c5bf3946569d81, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2827,6 +2844,7 @@ GameObject:
   - 223: {fileID: 860069391}
   - 114: {fileID: 860069390}
   - 114: {fileID: 860069389}
+  - 82: {fileID: 860069392}
   m_Layer: 5
   m_Name: SkillsUI
   m_TagString: Untagged
@@ -2918,6 +2936,76 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!82 &860069392
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860069387}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &927236372
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,7 +3775,7 @@ GameObject:
   - 50: {fileID: 1148563852}
   - 61: {fileID: 1148563851}
   m_Layer: 5
-  m_Name: Facebook
+  m_Name: icon1
   m_TagString: Facebook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3758,7 +3846,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 372cbc168453529438d688c538fdd4fe, type: 3}
+  m_Texture: {fileID: 2800000, guid: dbe8f42f5a046e34f8817b34a69ec1b4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
