@@ -1,0 +1,738 @@
+fileFormatVersion: 2
+guid: 2b67db82b5bd1804fa7500e4df28e32a
+timeCreated: 1450236668
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 4-colors-of-glowing-balls-2-with-shadow_0
+    21300002: 4-colors-of-glowing-balls-2-with-shadow_1
+    21300004: 4-colors-of-glowing-balls-2-with-shadow_2
+    21300006: 4-colors-of-glowing-balls-2-with-shadow_3
+    21300008: 4-colors-of-glowing-balls-2-with-shadow_4
+    21300010: 4-colors-of-glowing-balls-2-with-shadow_5
+    21300012: 4-colors-of-glowing-balls-2-with-shadow_6
+    21300014: 4-colors-of-glowing-balls-2-with-shadow_7
+    21300016: 4-colors-of-glowing-balls-2-with-shadow_8
+    21300018: 4-colors-of-glowing-balls-2-with-shadow_9
+    21300020: 4-colors-of-glowing-balls-2-with-shadow_10
+    21300022: 4-colors-of-glowing-balls-2-with-shadow_11
+    21300024: 4-colors-of-glowing-balls-2-with-shadow_12
+    21300026: 4-colors-of-glowing-balls-2-with-shadow_13
+    21300028: 4-colors-of-glowing-balls-2-with-shadow_14
+    21300030: 4-colors-of-glowing-balls-2-with-shadow_15
+    21300032: 4-colors-of-glowing-balls-2-with-shadow_16
+    21300034: 4-colors-of-glowing-balls-2-with-shadow_17
+    21300036: 4-colors-of-glowing-balls-2-with-shadow_18
+    21300038: 4-colors-of-glowing-balls-2-with-shadow_19
+    21300040: 4-colors-of-glowing-balls-2-with-shadow_20
+    21300042: 4-colors-of-glowing-balls-2-with-shadow_21
+    21300044: 4-colors-of-glowing-balls-2-with-shadow_22
+    21300046: 4-colors-of-glowing-balls-2-with-shadow_23
+    21300048: 4-colors-of-glowing-balls-2-with-shadow_24
+    21300050: 4-colors-of-glowing-balls-2-with-shadow_25
+    21300052: 4-colors-of-glowing-balls-2-with-shadow_26
+    21300054: 4-colors-of-glowing-balls-2-with-shadow_27
+    21300056: 4-colors-of-glowing-balls-2-with-shadow_28
+    21300058: 4-colors-of-glowing-balls-2-with-shadow_29
+    21300060: 4-colors-of-glowing-balls-2-with-shadow_30
+    21300062: 4-colors-of-glowing-balls-2-with-shadow_31
+    21300064: 4-colors-of-glowing-balls-2-with-shadow_32
+    21300066: 4-colors-of-glowing-balls-2-with-shadow_33
+    21300068: 4-colors-of-glowing-balls-2-with-shadow_34
+    21300070: 4-colors-of-glowing-balls-2-with-shadow_35
+    21300072: 4-colors-of-glowing-balls-2-with-shadow_36
+    21300074: 4-colors-of-glowing-balls-2-with-shadow_37
+    21300076: 4-colors-of-glowing-balls-2-with-shadow_38
+    21300078: 4-colors-of-glowing-balls-2-with-shadow_39
+    21300080: 4-colors-of-glowing-balls-2-with-shadow_40
+    21300082: 4-colors-of-glowing-balls-2-with-shadow_41
+    21300084: 4-colors-of-glowing-balls-2-with-shadow_42
+    21300086: 4-colors-of-glowing-balls-2-with-shadow_43
+    21300088: 4-colors-of-glowing-balls-2-with-shadow_44
+    21300090: 4-colors-of-glowing-balls-2-with-shadow_45
+    21300092: 4-colors-of-glowing-balls-2-with-shadow_46
+    21300094: 4-colors-of-glowing-balls-2-with-shadow_47
+    21300096: 4-colors-of-glowing-balls-2-with-shadow_48
+    21300098: 4-colors-of-glowing-balls-2-with-shadow_49
+    21300100: 4-colors-of-glowing-balls-2-with-shadow_50
+    21300102: 4-colors-of-glowing-balls-2-with-shadow_51
+    21300104: 4-colors-of-glowing-balls-2-with-shadow_52
+    21300106: 4-colors-of-glowing-balls-2-with-shadow_53
+    21300108: 4-colors-of-glowing-balls-2-with-shadow_54
+    21300110: 4-colors-of-glowing-balls-2-with-shadow_55
+    21300112: 4-colors-of-glowing-balls-2-with-shadow_56
+    21300114: 4-colors-of-glowing-balls-2-with-shadow_57
+    21300116: 4-colors-of-glowing-balls-2-with-shadow_58
+    21300118: 4-colors-of-glowing-balls-2-with-shadow_59
+    21300120: 4-colors-of-glowing-balls-2-with-shadow_60
+    21300122: 4-colors-of-glowing-balls-2-with-shadow_61
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 4-colors-of-glowing-balls-2-with-shadow_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 225
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 224
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 31
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 225
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 224
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 31
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 225
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 224
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 31
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 225
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 224
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 0
+        width: 31
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 193
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 160
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 193
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 192
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 193
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 160
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 193
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_19
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 192
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 161
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_21
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 161
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_22
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 160
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_23
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 161
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_24
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 161
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_25
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 160
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_26
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 129
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_27
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 96
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_28
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 129
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 128
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 129
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_31
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 96
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_32
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 129
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_33
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 128
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 97
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_35
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 97
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_36
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 96
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_37
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 97
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_38
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 97
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_39
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 96
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 65
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_41
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_42
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 65
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_43
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 64
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_44
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 65
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_45
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 32
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_46
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 65
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_47
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 64
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_49
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 33
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_50
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 32
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_51
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_52
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 33
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_53
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 32
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_54
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_55
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_56
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_57
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_58
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_59
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_60
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4-colors-of-glowing-balls-2-with-shadow_61
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
