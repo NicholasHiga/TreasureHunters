@@ -15,7 +15,9 @@ public class PickUp : MonoBehaviour
     int RhealthPot;
     bool Raged;
     bool hyper;
-    float blinkTimer;
+    float RagedTimer;
+    float hyperTimer;
+    float teleTimer;
     Vector3 orgLocalScale;
     bool allowedTele;
 
@@ -28,14 +30,18 @@ public class PickUp : MonoBehaviour
         healthPot = 0;
         Raged = false;
         hyper = false;
-        blinkTimer = 0;
+        RagedTimer = 0;
+        teleTimer = 0;
+        hyperTimer = 0;
         orgLocalScale = transform.localScale;
         allowedTele = true;
     }
 
     void FixedUpdate()
     {
-        blinkTimer -= Time.deltaTime;
+        RagedTimer -= Time.deltaTime;
+        hyperTimer -= Time.deltaTime;
+        teleTimer -= Time.deltaTime;
         ItemUsage();
         if (healthPot >= 3)
         {
@@ -108,7 +114,7 @@ public class PickUp : MonoBehaviour
     }
     void Enraged()
     {
-        blinkTimer = 5;
+        RagedTimer = 5;
         if (Raged == false)
         {
             transform.localScale += new Vector3(.5f, .5f, 0);
@@ -117,7 +123,7 @@ public class PickUp : MonoBehaviour
     }
     void Encouraged()
     {
-        blinkTimer = 10;
+        hyperTimer = 10;
         if (hyper == false)
         {
             gameObject.GetComponent<Movement>().horizontalSpeed = 9;
@@ -127,15 +133,15 @@ public class PickUp : MonoBehaviour
     }
     void Teled()
     {
-        blinkTimer = 2;
+        teleTimer = 2;
     }
     void State()
     {
         if (Raged)
         {
 
-            Debug.Log(blinkTimer.ToString());
-            if (blinkTimer <= 0)
+            Debug.Log(RagedTimer.ToString());
+            if (RagedTimer <= 0)
             {
                 Raged = false;
                 transform.localScale = orgLocalScale;
@@ -149,8 +155,8 @@ public class PickUp : MonoBehaviour
         }
         if (hyper)
         {
-            Debug.Log(blinkTimer.ToString());
-            if (blinkTimer <= 0)
+            Debug.Log(hyperTimer.ToString());
+            if (hyperTimer <= 0)
             {
                 hyper = false;
             }
@@ -164,8 +170,8 @@ public class PickUp : MonoBehaviour
         if (!allowedTele)
         {
             
-            Debug.Log(blinkTimer.ToString());
-            if (blinkTimer <= 0)
+            Debug.Log(teleTimer.ToString());
+            if (teleTimer <= 0)
             {
                 allowedTele = true; 
             }
