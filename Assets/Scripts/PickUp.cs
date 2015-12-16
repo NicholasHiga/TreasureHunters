@@ -185,15 +185,9 @@ public class PickUp : MonoBehaviour
         }
         if (!hyper&&!Raged)
         {
-<<<<<<< HEAD
-            /*gameObject.GetComponent<Movement>().horizontalSpeed = 3;
-            gameObject.GetComponent<Movement>().verticalSpeed = 2;
-            gameObject.GetComponent<Renderer>().material.color = Color.white;*/
-=======
             Player.GetComponent<Movement>().horizontalSpeed = 3;
             Player.GetComponent<Movement>().verticalSpeed = 2;
             Player.GetComponent<Renderer>().material.color = Color.white;
->>>>>>> origin/master
         }
         if (!allowedTele)
         {
