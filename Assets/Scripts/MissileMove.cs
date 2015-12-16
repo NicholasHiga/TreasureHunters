@@ -18,10 +18,6 @@ public class MissileMove : MonoBehaviour
 		if (Vector2.Distance(transform.position, startingLocation) >
 			Vector2.Distance(explosionLocation, startingLocation))
 		{
-			//Vector4 boundaries = explosion.GetComponent<SpriteRenderer>().sprite.border;
-			//Vector3 pos = new Vector3();
-			//pos.x = transform.position.x + (boundaries.z - boundaries.x);
-			//pos.y = transform.position.y + (boundaries.y - boundaries.w);
 			Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, 0.5f);
 			for (int i = 0; i < col.Length; i++)
 			{			

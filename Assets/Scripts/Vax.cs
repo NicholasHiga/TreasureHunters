@@ -28,7 +28,7 @@ public class Vax : Character
 	{
 		isDashing = false;
 		isDualWielding = false;
-		maxDashDistance = 20.0f;
+		maxDashDistance = 1.5f;
 		dashSpeed = 20.0f;
 
 		audio = GetComponent<AudioSource>();
@@ -74,8 +74,9 @@ public class Vax : Character
 		if (isDashing)
 		{
 			transform.position += currentDashSpeed * Time.deltaTime;
-			if (Vector2.Distance(transform.position, startingDashLocation) >
-				Vector2.Distance(targetDashLocation, startingDashLocation))
+			float distanceDashed = Vector2.Distance(transform.position, startingDashLocation);
+            if (distanceDashed > Vector2.Distance(targetDashLocation, startingDashLocation)
+				|| distanceDashed > maxDashDistance)
 			{
 				isDashing = false;
 				GetComponent<Movement>().enabled = true;
@@ -99,6 +100,7 @@ public class Vax : Character
 	void DashInDirection(Vector3 position)
 	{
 		Vector3 direction = position - transform.position;
+		targetDashLocation = position;
 		startingDashLocation = transform.position;
 		direction.Normalize();
 
@@ -108,6 +110,7 @@ public class Vax : Character
 
 		isDashing = true;
 		GetComponent<Movement>().enabled = false;
+		Debug.Log(Vector2.Distance(targetDashLocation, startingDashLocation));
 	}
 
 	public RangedWeapon[] GetWeaponScripts()

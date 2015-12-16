@@ -15,6 +15,7 @@ TagManager:
   - T
   - Trap
   - Treasure
+  - Missile
   layers:
   - Default
   - TransparentFX
