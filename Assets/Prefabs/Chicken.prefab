@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rawChicken: {fileID: 424954, guid: 88484e551c2e1b043a1220668a3fc11f, type: 2}
+  chicken: {fileID: 192730, guid: 88484e551c2e1b043a1220668a3fc11f, type: 2}
 --- !u!114 &11484342
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,6 +151,10 @@ Prefab:
       propertyPath: m_TagString
       value: Chicken
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: chicken
+      value: 
+      objectReference: {fileID: 192730, guid: 88484e551c2e1b043a1220668a3fc11f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 147238}
