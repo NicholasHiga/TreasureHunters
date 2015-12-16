@@ -149,9 +149,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chargeBar: {fileID: 0}
   digArea: {fileID: 469148, guid: d0d1123160d05824ba5f037a3c385bb3, type: 2}
-  purplePowerUp: {fileID: 0}
-  redPowerUp: {fileID: 0}
-  treasure: {fileID: 0}
+  purplePowerUp: {fileID: 401972, guid: a3f9cbca4e7230246bbe33936e37b729, type: 2}
+  redPowerUp: {fileID: 402416, guid: f4c2f4991d9c1a944ab7b7d74b8d619a, type: 2}
+  treasure: {fileID: 494810, guid: 6442932ef6439854e9784568e58e7f79, type: 2}
   drillSound: {fileID: 8300000, guid: c39d75937f0239049a68d5a6e2f328ca, type: 3}
 --- !u!114 &11439148
 MonoBehaviour:
@@ -320,6 +320,18 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 103
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: treasure
+      value: 
+      objectReference: {fileID: 494810, guid: 6442932ef6439854e9784568e58e7f79, type: 2}
+    - target: {fileID: 0}
+      propertyPath: redPowerUp
+      value: 
+      objectReference: {fileID: 402416, guid: f4c2f4991d9c1a944ab7b7d74b8d619a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: purplePowerUp
+      value: 
+      objectReference: {fileID: 401972, guid: a3f9cbca4e7230246bbe33936e37b729, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100396}

@@ -66,6 +66,10 @@ public class PickUp : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+        if (col.gameObject.tag == "Treasure")
+        {
+            Application.LoadLevel("WinScreen");
+        }
         if (col.gameObject.tag == "RawChicken")
         {
             healthPot++;
