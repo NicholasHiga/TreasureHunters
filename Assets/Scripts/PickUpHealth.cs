@@ -3,9 +3,9 @@ using System.Collections;
 
 public class PickUpHealth : MonoBehaviour {
 
-	void OnTriggerEnter2D()
+	void OnTriggerEnter2D(Collider2D other)
     {
-        if (GameObject.FindGameObjectWithTag("Player"))
+        if (other.gameObject.tag == "Player")
         {
             Destroy(GameObject.FindGameObjectWithTag("RawChicken"));
         }
