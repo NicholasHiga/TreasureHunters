@@ -9,11 +9,16 @@ public class PickUp : MonoBehaviour
     float calculatedHealth;
     public GameObject HealthBar;
     public GameObject HealthBarBig;
+    public GameObject Tele1;
+    public GameObject Tele2;
     int healthPot;
     int RhealthPot;
     bool Raged;
     bool hyper;
     float blinkTimer;
+    Vector3 orgLocalScale;
+    bool allowedTele;
+
 
     void Start()
     {
@@ -24,6 +29,8 @@ public class PickUp : MonoBehaviour
         Raged = false;
         hyper = false;
         blinkTimer = 0;
+        orgLocalScale = transform.localScale;
+        allowedTele = true;
     }
 
     void FixedUpdate()
@@ -50,22 +57,34 @@ public class PickUp : MonoBehaviour
         {
             healthPot++;
         }
-        else if (col.gameObject.tag == "RedPowerUp")
+        else if (col.gameObject.tag == "RedPowerUp" && !hyper)
         {
-            
+
             if (!Raged)
             {
                 Enraged();
             }
-                Raged = true;
+            Raged = true;
         }
-        else if (col.gameObject.tag == "PurplePowerUp")
+        else if (col.gameObject.tag == "PurplePowerUp" && !Raged)
         {
             if (!hyper)
             {
                 Encouraged();
             }
             hyper = true;
+        }
+        else if (col.gameObject.tag == "Tele1"&&allowedTele)
+        {
+            transform.position = Tele2.transform.position;
+            allowedTele = false;
+            Teled();
+        }
+        else if (col.gameObject.tag == "Tele2"&&allowedTele)
+        {
+            transform.position = Tele1.transform.position;
+            allowedTele = false;
+            Teled();
         }
     }
     public void setHealthBar(float myHealth)
@@ -92,7 +111,7 @@ public class PickUp : MonoBehaviour
         blinkTimer = 5;
         if (Raged == false)
         {
-            transform.localScale += new Vector3(1f, 1f, 0);
+            transform.localScale += new Vector3(.5f, .5f, 0);
             gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
     }
@@ -106,6 +125,10 @@ public class PickUp : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.color = Color.magenta;
         }
     }
+    void Teled()
+    {
+        blinkTimer = 2;
+    }
     void State()
     {
         if (Raged)
@@ -115,11 +138,12 @@ public class PickUp : MonoBehaviour
             if (blinkTimer <= 0)
             {
                 Raged = false;
+                transform.localScale = orgLocalScale;
             }
         }
         if (!Raged&&!hyper)
         {
-            transform.localScale = new Vector3(1f, 1f, 0);
+            
             gameObject.GetComponent<Renderer>().material.color = Color.white;
 
         }
@@ -136,6 +160,16 @@ public class PickUp : MonoBehaviour
             gameObject.GetComponent<Movement>().horizontalSpeed = 3;
             gameObject.GetComponent<Movement>().verticalSpeed = 2;
             gameObject.GetComponent<Renderer>().material.color = Color.white;
+        }
+        if (!allowedTele)
+        {
+            
+            Debug.Log(blinkTimer.ToString());
+            if (blinkTimer <= 0)
+            {
+                allowedTele = true; 
+            }
+
         }
     }
 }

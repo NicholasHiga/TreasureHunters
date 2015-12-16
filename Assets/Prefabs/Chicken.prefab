@@ -16,7 +16,6 @@ GameObject:
   - 95: {fileID: 9505396}
   - 111: {fileID: 11110610}
   - 114: {fileID: 11473732}
-  - 114: {fileID: 11450254}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Chicken
@@ -96,17 +95,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &11450254
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b74a4093b18ce5f468e524ccd512d25f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11472748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,6 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 0}
+  HealthBarBig: {fileID: 0}
+  Tele1: {fileID: 0}
+  Tele2: {fileID: 0}
 --- !u!114 &11484342
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -8,6 +8,10 @@ TagManager:
   - Chicken
   - RawChicken
   - Facebook
+  - PurplePowerUp
+  - RedPowerUp
+  - Tele1
+  - Tele2
   layers:
   - Default
   - TransparentFX

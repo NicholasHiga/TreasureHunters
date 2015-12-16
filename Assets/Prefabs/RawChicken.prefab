@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6168692}
   - 50: {fileID: 5040474}
   - 114: {fileID: 11408840}
+  - 114: {fileID: 11442154}
   m_Layer: 0
   m_Name: RawChicken
   m_TagString: RawChicken
@@ -69,6 +70,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1b87c3d6e6b26d40952b97e1b26d8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11442154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74a4093b18ce5f468e524ccd512d25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21248118
