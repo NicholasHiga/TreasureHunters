@@ -7,7 +7,10 @@ public class Dig : MonoBehaviour {
     float time = 0;
     public Image chargeBar;
     public Transform digArea;
+    public Transform purplePowerUp;
+    public Transform redPowerUp;
     public AudioClip drillSound;
+    private int number;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +21,7 @@ public class Dig : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		time += Time.deltaTime;
+        number = Random.Range(1, 10);
         if (time >= 0.2f)
         {
            // GetComponent<AudioSource>().PlayOneShot(drillSound, 0.3f);
@@ -28,6 +32,14 @@ public class Dig : MonoBehaviour {
         {
             Destroy(gameObject);
             Instantiate(digArea, transform.position, transform.rotation);
+            if (number == 1)
+            {
+                Instantiate(purplePowerUp, transform.position, transform.rotation);
+            }
+            if (number == 2)
+            {
+                Instantiate(redPowerUp, transform.position, transform.rotation);
+            }
         }
 	}
 }
