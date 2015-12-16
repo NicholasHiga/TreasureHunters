@@ -12,14 +12,25 @@ public class Vax : Character
 
 	private RangedWeapon[] weapons;
 	private uint current_weapon = 0;
+	public bool isDualWielding;
 
 	private new AudioSource audio;
-	public bool isDualWielding;
+
+	private float maxDashDistance;
+	private float dashSpeed;
+	private bool isDashing;
+	private Vector3 currentDashSpeed;
+	private Vector2 targetDashLocation;
+	private Vector2 startingDashLocation;
 
 	// Use this for initialization
 	void Start ()
 	{
+		isDashing = false;
 		isDualWielding = false;
+		maxDashDistance = 20.0f;
+		dashSpeed = 20.0f;
+
 		audio = GetComponent<AudioSource>();
 		weapons = new RangedWeapon[2];
 		current_weapon = (uint)WEAPON.DUAL_PISTOLS;
@@ -57,8 +68,19 @@ public class Vax : Character
 		/*if (Input.GetKeyDown(KeyCode.Alpha3))
 			SwitchWeapon(WEAPON.ROCKET_LAUNCHER);*/
 
-		if (Input.GetKeyDown(KeyCode.R))
+		if (Input.GetKeyDown(KeyCode.E) && !isDashing)
 			DashInDirection(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+
+		if (isDashing)
+		{
+			transform.position += currentDashSpeed * Time.deltaTime;
+			if (Vector2.Distance(transform.position, startingDashLocation) >
+				Vector2.Distance(targetDashLocation, startingDashLocation))
+			{
+				isDashing = false;
+				GetComponent<Movement>().enabled = true;
+			}
+		}
 
 		weapons[current_weapon].Update();
     }
@@ -76,6 +98,20 @@ public class Vax : Character
 
 	void DashInDirection(Vector3 position)
 	{
+		Vector3 direction = position - transform.position;
+		startingDashLocation = transform.position;
+		direction.Normalize();
 
+		float theta = Mathf.Atan2(direction.y, direction.x);
+		currentDashSpeed.x = dashSpeed * Mathf.Cos(theta);
+		currentDashSpeed.y = dashSpeed * Mathf.Sin(theta);
+
+		isDashing = true;
+		GetComponent<Movement>().enabled = false;
+	}
+
+	public RangedWeapon[] GetWeaponScripts()
+	{
+		return weapons;
 	}
 }

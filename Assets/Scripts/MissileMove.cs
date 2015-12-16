@@ -26,11 +26,7 @@ public class MissileMove : MonoBehaviour
 			for (int i = 0; i < col.Length; i++)
 			{			
 				if (col[i].tag == "Chicken")
-				{
 					col[i].gameObject.GetComponent<CollideChicken>().DropRawChicken();
-					Debug.Log("Detected");
-				}
-
 			}
 
 			Instantiate(explosion, gameObject.transform.position, transform.rotation);
