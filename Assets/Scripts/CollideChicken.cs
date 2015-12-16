@@ -3,12 +3,11 @@ using System.Collections;
 
 public class CollideChicken : MonoBehaviour {
 
-    public Transform rawChicken;
-    public GameObject chicken;
+    public Transform rawChicken;   
 
     void Start()
     {
-        //GameObject obj = (GameObject)Instantiate(chicken, transform.position, transform.rotation);
+        
     }
 
     void OnTriggerEnter2D()
@@ -16,8 +15,8 @@ public class CollideChicken : MonoBehaviour {
         if (GameObject.FindGameObjectWithTag("Bullet"))
         {
             Destroy(GameObject.FindGameObjectWithTag("Chicken"));
-            //Instantiate(rawChicken, transform.position, transform.rotation);
+            Instantiate(rawChicken, transform.position, transform.rotation);
         }
-        GameObject obj = (GameObject)Instantiate(chicken, transform.position, transform.rotation);
+        
     }
 }
