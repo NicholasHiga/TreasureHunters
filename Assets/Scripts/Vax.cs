@@ -5,7 +5,7 @@ public class Vax : Character
 {
 	enum WEAPON
 	{
-		DUAL_PISTOLS, SHOTGUN, ROCKET_LAUNCHER
+		DUAL_PISTOLS, ROCKET_LAUNCHER, SHOTGUN
 	}
 
 	private AudioClip switch_weapon_sound;
@@ -14,12 +14,14 @@ public class Vax : Character
 	private uint current_weapon = 0;
 
 	private new AudioSource audio;
+	public bool isDualWielding;
 
 	// Use this for initialization
 	void Start ()
 	{
+		isDualWielding = false;
 		audio = GetComponent<AudioSource>();
-		weapons = new RangedWeapon[3];
+		weapons = new RangedWeapon[2];
 		current_weapon = (uint)WEAPON.DUAL_PISTOLS;
 
 		switch_weapon_sound = Resources.Load("Sounds/Weapons/SwitchWeapon") as AudioClip;
@@ -28,16 +30,19 @@ public class Vax : Character
 		weapons[0].timeBetweenShots = 0.45f;
 		weapons[0].weaponDamage = 20;
 		weapons[0].shotSound = Resources.Load("Sounds/Weapons/Pistol") as AudioClip;
+		weapons[0].parent = this;
 
 		/*weapons[1] = new RangedWeapon(audio);
 		weapons[1].timeBetweenShots = 1.5f;
 		weapons[1].weaponDamage = 30;
-		weapons[1].shotSound = Resources.Load("Sounds/Weapons/Shotgun") as AudioClip;
+		weapons[1].shotSound = Resources.Load("Sounds/Weapons/Shotgun") as AudioClip;*/
+		//weapons[1].parent = this;
 
-		weapons[2] = new RangedWeapon(audio);
-		weapons[2].timeBetweenShots = 4f;
-		weapons[2].weaponDamage = 40;
-		weapons[2].shotSound = Resources.Load("Sounds/Weapons/Pistol") as AudioClip;*/
+		weapons[1] = new RocketLauncher(audio, transform);
+		weapons[1].timeBetweenShots = 0.5f;
+		weapons[1].weaponDamage = 40;
+		weapons[1].shotSound = Resources.Load("Sounds/Weapons/RocketShoot") as AudioClip;
+		weapons[1].parent = this;
 	}
 	
 	// Update is called once per frame
@@ -47,10 +52,13 @@ public class Vax : Character
 			SwitchWeapon(WEAPON.DUAL_PISTOLS);
 
 		if (Input.GetKeyDown(KeyCode.Alpha2))
-			SwitchWeapon(WEAPON.SHOTGUN);
-
-		if (Input.GetKeyDown(KeyCode.Alpha3))
 			SwitchWeapon(WEAPON.ROCKET_LAUNCHER);
+
+		/*if (Input.GetKeyDown(KeyCode.Alpha3))
+			SwitchWeapon(WEAPON.ROCKET_LAUNCHER);*/
+
+		if (Input.GetKeyDown(KeyCode.R))
+			DashInDirection(Camera.main.ScreenToWorldPoint(Input.mousePosition));
 
 		weapons[current_weapon].Update();
     }
@@ -58,7 +66,16 @@ public class Vax : Character
 	void SwitchWeapon(WEAPON _weapon)
 	{
 		audio.PlayOneShot(switch_weapon_sound, 1.0f);
-		Debug.Log("Weapon switched to " + (uint)_weapon);
 		current_weapon = (uint)_weapon;
+	}
+
+	void SetDualWielding(bool _isDualWielding)
+	{
+		isDualWielding = _isDualWielding;
+	}
+
+	void DashInDirection(Vector3 position)
+	{
+
 	}
 }

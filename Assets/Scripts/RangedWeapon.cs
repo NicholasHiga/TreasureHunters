@@ -1,35 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class RangedWeapon
+public abstract class RangedWeapon : MonoBehaviour
 { 
 	public AudioClip shotSound;
 	public uint weaponDamage;
 	public Sprite rangeIndicator;
 	public float timeBetweenShots;
+	public Vax parent;
 
 	protected new AudioSource audio;
-	protected float lastTimeShot;
+	protected float shotTimer;
 	protected Transform transform;
 
 	// Use this for initialization
     public RangedWeapon (AudioSource _audio, Transform t)
 	{
-		lastTimeShot = Time.time - timeBetweenShots;
+		shotTimer = 0;
 		audio = _audio;
 		transform = t;
-	}
+    }
 	
 	// Update is called once per frame
 	public void Update ()
 	{
-		if (Input.GetMouseButton(0) && Time.time - lastTimeShot >= timeBetweenShots)
+		shotTimer -= Time.deltaTime;
+		if (Input.GetMouseButton(0) && shotTimer <= 0)
 		{
-			Shoot();
-			lastTimeShot = Time.time;
-			Debug.Log("Time: " + Time.time + " lastTimeShot: " + lastTimeShot + " " + (Time.time - lastTimeShot));
+			if (!parent.isDualWielding)
+				Shoot();
+			else
+				DualShoot();
+
+			shotTimer = timeBetweenShots;
 		}
 	}
 
 	public abstract void Shoot();
+	public abstract void DualShoot();
 }

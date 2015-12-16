@@ -27,8 +27,7 @@ public class PickUp : MonoBehaviour
 
     void Start()
     {
-		Debug.Log(gameObject.name);
-		currentHealth = 1;
+		currentHealth = 70;
         calculatedHealth = currentHealth / maxHealth;
         setHealthBar(calculatedHealth);
         healthPot = 0;
@@ -157,7 +156,10 @@ public class PickUp : MonoBehaviour
         TrapTimer = 2.5f;
         if (trapped)
         {
-            Player.GetComponent<Movement>().enabled = false;
+			currentHealth -= 20;
+			calculatedHealth = currentHealth / maxHealth;
+			setHealthBar(calculatedHealth);
+			Player.GetComponent<Movement>().enabled = false;
         }
     }
 

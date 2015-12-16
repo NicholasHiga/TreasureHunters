@@ -8,14 +8,19 @@ public class RocketLauncher : RangedWeapon
 
 	}
 
-
 	public override void Shoot()
 	{
 		audio.PlayOneShot(shotSound, 1.0f);
-		GameObject g = GameObject.Instantiate(Resources.Load("Prefabs/Missile"), transform.position, transform.rotation) as GameObject;
-		BulletMove mmScript = g.GetComponent<BulletMove>();
+		GameObject g = GameObject.Instantiate(Resources.Load("Prefabs/Missile"), transform.position, Quaternion.identity) as GameObject;
+		MissileMove mmScript = g.GetComponent<MissileMove>();
 		Vector3 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 		direction.Normalize();
-		mmScript.setDirection(direction);
-	}
+		mmScript.SetDirection(direction);
+		mmScript.SetExplosionLocation(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+    }
+
+	public override void DualShoot()
+	{
+		Shoot();
+	}	
 }
