@@ -8,6 +8,7 @@ public class PickUp : MonoBehaviour
     float maxHealth = 100;
     float calculatedHealth;
     public GameObject HealthBar;
+    public GameObject HealthBarBig;
     int healthPot;
     int RhealthPot;
     bool Raged;
@@ -70,6 +71,7 @@ public class PickUp : MonoBehaviour
     public void setHealthBar(float myHealth)
     {
         HealthBar.transform.localScale = new Vector3(myHealth, HealthBar.transform.localScale.y, HealthBar.transform.localScale.z);
+        HealthBarBig.transform.localScale = new Vector3(myHealth, HealthBarBig.transform.localScale.y, HealthBarBig.transform.localScale.z);
     }
 
     void ItemUsage()
@@ -90,7 +92,7 @@ public class PickUp : MonoBehaviour
         blinkTimer = 5;
         if (Raged == false)
         {
-            transform.localScale += new Vector3(.3f, .3f, 0);
+            transform.localScale += new Vector3(1f, 1f, 0);
             gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
     }
@@ -99,8 +101,8 @@ public class PickUp : MonoBehaviour
         blinkTimer = 10;
         if (hyper == false)
         {
-            gameObject.GetComponent<Movement>().horizontalSpeed = 6;
-            gameObject.GetComponent<Movement>().verticalSpeed = 4;
+            gameObject.GetComponent<Movement>().horizontalSpeed = 9;
+            gameObject.GetComponent<Movement>().verticalSpeed = 6;
             gameObject.GetComponent<Renderer>().material.color = Color.magenta;
         }
     }
