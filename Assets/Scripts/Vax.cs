@@ -13,6 +13,7 @@ public class Vax : Character
 	private RangedWeapon[] weapons;
 	private uint current_weapon = 0;
 	public bool isDualWielding;
+    float dashCooldownTimer = 0;
 
 	private new AudioSource audio;
 
@@ -59,17 +60,22 @@ public class Vax : Character
 	// Update is called once per frame
 	void Update ()
 	{
+        dashCooldownTimer -= Time.deltaTime;
 		if (Input.GetKeyDown(KeyCode.Alpha1))
 			SwitchWeapon(WEAPON.DUAL_PISTOLS);
 
 		if (Input.GetKeyDown(KeyCode.Alpha2))
 			SwitchWeapon(WEAPON.ROCKET_LAUNCHER);
 
-		/*if (Input.GetKeyDown(KeyCode.Alpha3))
+        /*if (Input.GetKeyDown(KeyCode.Alpha3))
 			SwitchWeapon(WEAPON.ROCKET_LAUNCHER);*/
 
-		if (Input.GetKeyDown(KeyCode.E) && !isDashing)
-			DashInDirection(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        if (Input.GetKeyDown(KeyCode.R) && !isDashing && dashCooldownTimer <= 0)
+        {
+            DashInDirection(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            dashCooldownTimer = 5f;
+        }
+        
 
 		if (isDashing)
 		{

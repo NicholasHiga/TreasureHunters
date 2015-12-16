@@ -70,7 +70,7 @@ public class SkillsUI : MonoBehaviour {
         }
         if (time >= 0.1f)
         {
-            skillThree.fillAmount += 0.03f;
+            skillThree.fillAmount += 0.0034f;
             if (skillThree.fillAmount >= 1.0f)
             {
                 canCastSkillThree = true;
