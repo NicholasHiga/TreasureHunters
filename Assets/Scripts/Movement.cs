@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     public float digDelay = 0.3f;
     float cooldownTimer = 0f;
 
+	public KeyCode upMove, downMove, leftMove, rightMove;
+
 	// Make this an enum later, when there's pretty much 360 degree freedom
 	bool directionFacing = false; // 0 = left, 1 = right
 
@@ -16,16 +18,16 @@ public class Movement : MonoBehaviour
     {
         cooldownTimer -= Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(leftMove))
             gameObject.transform.position += new Vector3(-horizontalSpeed * Time.fixedDeltaTime, 0, 0);
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(rightMove))
             gameObject.transform.position += new Vector3(horizontalSpeed * Time.fixedDeltaTime, 0, 0);
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(upMove))
             gameObject.transform.position += new Vector3(0, verticalSpeed * Time.fixedDeltaTime, 0);
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(downMove))
             gameObject.transform.position += new Vector3(0, -verticalSpeed * Time.fixedDeltaTime, 0);
 
         if (Input.GetKey(KeyCode.Space) && cooldownTimer <= 0)
